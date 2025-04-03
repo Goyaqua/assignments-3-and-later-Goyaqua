@@ -8,7 +8,7 @@ OBJ = $(SRC:.c=.o)
 
 # If CROSS_COMPILE is set, use the cross-compiler
 ifdef CROSS_COMPILE
-    CC := $(CROSS_COMPILE)linux-gnu-gcc
+    CC := $(CROSS_COMPILE)gcc
 endif
 
 # Default build target
