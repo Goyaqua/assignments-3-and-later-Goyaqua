@@ -42,7 +42,7 @@ if [ ! -e ${OUTDIR}/linux-stable/arch/${ARCH}/boot/Image ]; then
   sed -i 's/YYLTYPE yylloc;/extern YYLTYPE yylloc;/' scripts/dtc/dtc-lexer.l
 
   make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} defconfig
-  make -j$(nproc) ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} all
+  make -j$(nproc) ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} Image
 
   make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} dtbs
 fi
