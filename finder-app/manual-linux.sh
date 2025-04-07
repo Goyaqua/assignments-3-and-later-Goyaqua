@@ -1,5 +1,6 @@
 #!/bin/bash
-# Script to install and build Linux kernel and a minimal root filesystem.
+# Script outline to install and build kernel.
+# Author: Siddhant Jajoo.
 
 set -e
 set -u
