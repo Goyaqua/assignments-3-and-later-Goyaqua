@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ $# -ne 2 ]; then
 	echo "Error: Incorrect number of arguments. Usage: $0 <filesdir> <searchstr>"
